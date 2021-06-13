@@ -1,27 +1,36 @@
-# news-react-app-with-node
+# News-react-app-with-node
 
 Node + React application that shows the latest news from the United Kingdom
 
-clone the repo
 
 Steps to run the application
+============================
 
-npm install
+In the project directory, run the following Commands/Scripts
 
-#to run node js application which provides API Service
+### `npm install`
 
-npm start 
-Runs in - http://localhost:3001
+install the dependencies
 
-new terminal
+### `npm start` 
 
-#to run react application
+Runs the API service in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-cd client/
-npm install
-npm start
 
-Runs in - http://localhost:3000
+## To run react application
+
+In the project /client directory, run the following Commands/Scripts
+
+### `npm install`
+
+install the dependencies
+
+### `npm start` 
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 =======
 # Getting Started with Create React App
