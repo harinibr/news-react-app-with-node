@@ -1,0 +1,39 @@
+.newsHeadLines{
+  margin: 20px;
+
+  ul{
+    list-style: none;
+    li{
+      margin: 10px 0;
+    }
+    .articleLinkDiv{
+      display: grid;
+      grid-column: 2;
+      grid-template-columns: 20px 1fr;
+      padding: 10px;
+      &:hover{
+        background-color: #f3f3f3;
+        text-decoration: underline;
+      }
+    }
+
+    .navLinkToArticle{
+     &,> *{
+       cursor: pointer;
+     }
+      font-size: 18px;
+      font-weight: 500;
+
+      color: #333;
+      text-decoration: none;
+
+      .author{
+        display: block;
+        margin-top: 10px;
+        color: #666;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+}

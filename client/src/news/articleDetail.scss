@@ -1,0 +1,16 @@
+.articleDetails{
+  margin: 10px;
+  .articleImage{
+    width: 100%;
+    max-width: 100%;
+  }
+  .moreDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    i:last-child{
+      text-align: right;
+    }
+  }
+
+}
