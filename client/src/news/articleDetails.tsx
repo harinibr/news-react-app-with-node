@@ -11,6 +11,7 @@ function ArticleDetail() {
 
     const selectedArticle: IArticle | null = articleContext.selectedArticle ? articleContext.selectedArticle : null;
     const publishDate = new Date(selectedArticle?.publishedAt.toString()||"").toLocaleDateString("gb");
+    const publishTime = new Date(selectedArticle?.publishedAt.toString()||"").toLocaleTimeString("gb");
 
     //article details
 
@@ -27,10 +28,10 @@ function ArticleDetail() {
                         Source {selectedArticle.source.name}
                     </i>
                     <i>
-                        Published by {selectedArticle?.author} on {publishDate.toString()}
+                        Published by {selectedArticle?.author} on {publishDate.toString()} at {publishTime.toString()}
                     </i>
                 </div>
-                <p className={"articleContent"}>{selectedArticle?.description}</p>
+                <p className={"articleContent"} dangerouslySetInnerHTML={{__html:selectedArticle?.description}}></p>
                 <img  className={"articleImage"} src={selectedArticle?.urlToImage} alt={"Article"}/>
 
                 <br />
